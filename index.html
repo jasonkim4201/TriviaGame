@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<link rel="stylesheet" href="/assets/css/style.css">
-<title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>🤔 Trivia Game 🤔</title>
 </head>
+
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <div class="jumbotron" id="triviaStartScreen">
+    <h1 class="display-4 text-center">Trivia Game!</h1>
+      <div class="container">
+        <div class= "row">
+          <div class ="col">
+            <input class="btn btn-primary btn-lg btn-block" id="startButton" type="button" value="DID YOU KNOW THE VALUE SECTION IS WHERE I CAN PUT TEXT?!?"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="triviaContent" style="display: none;">
+    <!-- Game stuff will go below here. -->
+
+    <div class="jumbotron">
+      <h1 class="display-4 text-center">Trivia Game!</h1>
+      <p class="lead text-center">This is a simple hero unit, a simple jumbotron-style component for calling extra
+        attention to featured content or information.</p>
+      <hr class="my-4">
+    </div>
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script>
+    $("#startButton").click(function () {
+      $("#triviaStartScreen").hide();
+      $("#triviaContent").show();
+    });
+  </script>
 </body>
+
 </html>
