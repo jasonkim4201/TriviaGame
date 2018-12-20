@@ -2,6 +2,10 @@ body {
   font-family: 'Playfair Display SC', serif;   
 }
 
+.triviaQuestion {
+  font-weight: bold;
+}
+
 #triviaStartScreen {
   margin-top: 15%;
 }

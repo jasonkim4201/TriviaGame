@@ -2,158 +2,171 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Trivia Game</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+       <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+       <link rel="stylesheet" href="assets/css/style.css">
+       <title>🤔 Trivia Game 🤔</title>
 </head>
 
 <body>
 
-  <div class="jumbotron" id="triviaStartScreen">
-    <h1 class="display-4 text-center">Trivia Game!</h1>
-      <div class="container">
-        <div class= "row">
-          <div class ="col">
-            <input class="btn btn-primary btn-lg btn-block" id="startButton" type="button" value="Click to start the trivia game!"/>
-        </div>
-      </div>
-    </div>
-  </div>
+       <div class="jumbotron" id="triviaStartScreen">
+              <h1 class="display-4 text-center">Trivia Game!</h1>
+              <div class="container">
+                     <div class="row">
+                            <div class="col">
+                                   <input class="btn btn-primary btn-lg btn-block" id="startButton" type="button" value="Click to start the trivia game!" />
+                            </div>
+                     </div>
+              </div>
+       </div>
 
-<div id="triviaContent" style="display: none;">
-    <!-- Game stuff will go below here. -->
+       <div id="triviaContent" style="display: none;">
+              <!-- Game stuff will go below here. -->
 
-    <div class="jumbotron">
-      <h1 class="display-4 text-center">Trivia Game!</h1>
-      <p class="lead text-center">This is a trivia game about something! I'll figure out what to put once I actually put in some code!</p>
-      <hr class="my-4">
-      <div id="tickTock"></div>
-    </div>
-    
-<!-- Trivia question empty div -->
- <!--  <div>
-    <div class="triviaQuestions"></div>
-  </div> -->
+              <div class="jumbotron">
+                     <h1 class="display-4 text-center">Trivia Game!</h1>
+                     <p class="lead text-center">This is a trivia game about something! I'll figure out what to put
+                            once I actually put in some code!</p>
+                     <hr class="my-4">
+                     <div id="tickTock"></div>
+              </div>
 
-<!-- Test -->
-  <form> 
-    <h3>test</h3>
-      <p>Test question</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Choice 1</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Two</label>
-        <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-        <label for="contactChoice3">sdfe</label>
-      </div>
-      <p>Test question 2</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Choice 1</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Two</label>
-        <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-        <label for="contactChoice3">sdfe</label>
-      </div>
-      <p>Test question 3</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Choice 1</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Two</label>
-        <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-        <label for="contactChoice3">sdfe</label>
-      </div>
-      <p>Test question 4</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Choice 1</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Two</label>
-        <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-        <label for="contactChoice3">sdfe</label>
-      </div>
-      <p>Test question 5</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Choice 1</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Two</label>
-        <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-        <label for="contactChoice3">sdfe</label>
-      </div>
-      <p>Test question 6</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Choice 1</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Two</label>
-        <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-        <label for="contactChoice3">sdfe</label>
-      </div>
-      <p>Test question 7</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Choice 1</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Two</label>
-        <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-        <label for="contactChoice3">sdfe</label>
-      </div>
-      <div>
-          <p>Test question 8</p>
-          <div>
-            <input type="radio" id="contactChoice1"
-                   name="contact" value="email">
-            <label for="contactChoice1">Choice 1</label>
-            <input type="radio" id="contactChoice2"
-                   name="contact" value="phone">
-            <label for="contactChoice2">Two</label>
-            <input type="radio" id="contactChoice3"
-                   name="contact" value="mail">
-            <label for="contactChoice3">sdfe</label>
-          </div>
-        <button type="button" class="btn btn-primary btn-lg" id="submitTrivia">Submit</button>
-      </div>
-    </form>
-    <pre id="log">
+              <div class="container">     <!-- change all the value tags once you make questions! -->
+                     <form>
+                            <h3>test</h3>
+                            <p class="triviaQuestion">Test question</p>
+                            <div>
+                                   <input type="radio" id="q1c1" name="q1" value="email">
+                                   <label for="q1c1">Choice 1</label>
+
+                                   <input type="radio" id="q1c2" name="q1" value="phone">
+                                   <label for="q1c2">Two</label>
+
+                                   <input type="radio" id="q1c3" name="q1" value="mail">
+                                   <label for="q1c3">Three</label>
+
+                                   <input type="radio" id="q1c4" name="q1" value="mail">
+                                   <label for="q1c4">Four</label>
+                            </div>
+                            <p class="triviaQuestion">Test question 2</p>
+                            <div>
+                                   <input type="radio" id="q2c1" name="q2" value="email">
+                                   <label for="q2c1">Choice 1</label>
+
+                                   <input type="radio" id="q2c2" name="q2" value="phone">
+                                   <label for="q2c2">Two</label>
+
+                                   <input type="radio" id="q2c3" name="q2" value="mail">
+                                   <label for="q2c3">sdfe</label>
+
+                                   <input type="radio" id="q2c4" name="q2" value="mail">
+                                   <label for="q2c4">Four</label>
+                            </div>
+                            <p class="triviaQuestion">Test question 3</p>
+                            <div>
+                                   <input type="radio" id="q3c1" name="q3" value="email">
+                                   <label for="q3c1">Choice 1</label>
+
+                                   <input type="radio" id="q3c2" name="q3" value="phone">
+                                   <label for="q3c2">Two</label>
+
+                                   <input type="radio" id="q3c3" name="q3" value="mail">
+                                   <label for="q3c3">sdfe</label>
+
+                                   <input type="radio" id="q3c4" name="q3" value="mail">
+                                   <label for="q3c4">sdfe</label>
+                            </div>
+                            <p class="triviaQuestion">Test question 4</p>
+                            <div>
+                                   <input type="radio" id="q4c1" name="q4" value="email">
+                                   <label for="q4c1">Choice 1</label>
+
+                                   <input type="radio" id="q4c2" name="q4" value="phone">
+                                   <label for="q4c2">Two</label>
+
+                                   <input type="radio" id="q4c3" name="q4" value="mail">
+                                   <label for="q4c3">sdfe</label>
+
+                                   <input type="radio" id="q4c4" name="q4" value="mail">
+                                   <label for="q4c4">sdfe</label>
+                            </div>
+                            <p class="triviaQuestion">Test question 5</p>
+                            <div>
+                                   <input type="radio" id="q5c1" name="q5" value="email">
+                                   <label for="q5c1">Choice 1</label>
+
+                                   <input type="radio" id="q5c2" name="q5" value="phone">
+                                   <label for="q5c2">Two</label>
+
+                                   <input type="radio" id="q5c3" name="q5" value="mail">
+                                   <label for="q5c3">sdfe</label>
+
+                                   <input type="radio" id="q5c4" name="q5" value="mail">
+                                   <label for="q5c4">sdfe</label>
+                            </div>
+                            <p class="triviaQuestion">Test question 6</p>
+                            <div>
+                                   <input type="radio" id="q6c1" name="q6" value="email">
+                                   <label for="q6c1">Choice 1</label>
+
+                                   <input type="radio" id="q6c2" name="q6" value="phone">
+                                   <label for="q6c2">Two</label>
+
+                                   <input type="radio" id="q6c3" name="q6" value="mail">
+                                   <label for="q6c3">sdfe</label>
+
+                                   <input type="radio" id="q6c4" name="q6" value="mail">
+                                   <label for="q6c4">sdfe</label>
+                            </div>
+                            <p class="triviaQuestion">Test question 7</p>
+                            <div>
+                                   <input type="radio" id="q7c1" name="q7" value="email">
+                                   <label for="q7c1">Choice 1</label>
+
+                                   <input type="radio" id="q7c2" name="q7" value="phone">
+                                   <label for="q7c2">Two</label>
+
+                                   <input type="radio" id="q7c3" name="q7" value="mail">
+                                   <label for="q7c3">sdfe</label>
+
+                                   <input type="radio" id="q7c4" name="q7" value="mail">
+                                   <label for="q7c4">sdfe</label>
+                            </div>
+                            <div>
+                                   <p class="triviaQuestion">Test question 8</p>
+                                   <div>
+                                          <input type="radio" id="q8c1" name="q8" value="email">
+                                          <label for="q8c1">Choice 1</label>
+
+                                          <input type="radio" id="q8c2" name="q8" value="phone">
+                                          <label for="q8c2">Two</label>
+
+                                          <input type="radio" id="q8c3" name="q8" value="mail">
+                                          <label for="q8c3">sdfe</label>
+
+                                          <input type="radio" id="q8c4" name="q8" value="mail">
+                                          <label for="q8c4">sdfe</label>
+                                   </div>
+                                   <button type="button" class="btn btn-primary btn-lg" id="submitTrivia">Submit</button>
+                            </div>
+                     </form>
+              </div>
+              <pre id="log">
     </pre>
 
 
- </div> <!-- END OF triviaContent -->
+       </div> <!-- END OF triviaContent -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="assets/javascript/app.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+       <script src="assets/javascript/app.js"></script>
 
 </body>
 
