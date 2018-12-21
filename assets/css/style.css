@@ -1,5 +1,11 @@
 body {
-  font-family: 'Playfair Display SC', serif;   
+  font-family: 'Playfair Display SC', serif;
+
+  
+}
+
+.triviaZone {
+  font-family: 'Slabo 27px', serif;
 }
 
 .triviaQuestion {

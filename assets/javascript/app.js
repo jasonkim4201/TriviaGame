@@ -27,7 +27,7 @@ $("#startButton").click(function (event) {
 //decrement function here
 function decrement() {
   timeLeft--;
-  $("#tickTock").html(timeLeft);
+  $("#tickTock").html("Time remaining: " + timeLeft);
   if (timeLeft === 0)
   endTime();
 }
