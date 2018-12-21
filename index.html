@@ -9,10 +9,16 @@
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Slabo+27px" rel="stylesheet">
        <link rel="stylesheet" href="assets/css/style.css">
+    
+
+       
+
+
        <title>🤔 Trivia Game 🤔</title>
 </head>
 
 <body>
+          
 
        <div class="jumbotron" id="triviaStartScreen">
               <h1 class="display-4 text-center">Trivia Game!</h1>
@@ -179,25 +185,27 @@
                                           <input type="radio" id="q10c3" name="q10" value="correct">
                                           <label for="q10c3">Vega</label>
 
-                                          <input type="radio" id="q10c4" name="q10" value="correct">
+                                          <input type="radio" id="q10c4" name="q10" value="wrong">
                                           <label for="q10c4">Rho</label>
                                    </div>
-                                   <button type="button" class="btn btn-primary btn-lg" id="submitTrivia">Submit</button> 
+                                   <button type="button" class="btn btn-primary btn-lg" id="submitTrivia">Submit</button>
+                                   <button type="button" class="btn btn-primary btn-lg" id="resetTriviainGame">Reset game</button>
                                    <!-- submit button -->
                             </div>
                      </form>
               </div>
-              <pre id="log">
-    </pre>
-
-
        </div> <!-- END OF triviaContent -->
+     <!--   result -->
+       <div class="container">
+       <div id="results"></div>
+       </div>
 
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
        <script src="assets/javascript/app.js"></script>
+       
 
 </body>
 
