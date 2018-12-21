@@ -29,37 +29,7 @@ $("#startButton").click(function (event) {
 
 //Submit button. On click it will end the timer. On submit answers will be collected determine which ones are correct or not
 $("#submitTrivia").click(function () {
-  var getAnswers=[];
-  var answer;
-//hide trivia content on submission and determine if choices are correct or incorrect.  
-$("#triviaContent").hide();
-  for (var i =1; i < 11; i++) {
-
-    var answer=$("input[type='radio'][name='q" + i + "']:checked").val();
-    console.log(answer);
-    getAnswers[i]=answer;
-   if (answer ==="correct") {
-    //add counter for correct
-    correct++;
-   }
-   if (answer === "wrong") {
-     //add counter for wrong
-     wrong++;
-   }
-   if (answer === undefined) {
-    // add counter for unanswered
-    unanswered++;
-   } 
-   endTime();
-  }
-
-  $("#results").append("<h1>Correct answers: "+ correct +"</h1>");
-  $("#results").append("<h1>Wrong answers: "+ wrong +"</h1>");
-  $("#results").append("<h1>Unanswered answers: "+ unanswered +"</h1>");
-  
-console.log("Answers correct: " + correct);
-console.log("Answers wrong: " + wrong);
-console.log ("Unanswered questions: " + unanswered);  
+  sumbit(); 
 });
 
 // in game restart game
@@ -67,17 +37,14 @@ $("#resetTriviainGame").click(function() {
   location.reload();
 })
 
-
-//decrement function here //Tied auto submission of answers to decrement function
-function decrement() {
-  timeLeft--;
-  $("#tickTock").html("Time remaining: " + timeLeft);
-  if (timeLeft === 0){
+// sumbit function 
+function sumbit() {
   var getAnswers=[];
   var answer;
+  //hide trivia questions then uses a loop based on the form name + the numbers 1-10 following q
 $("#triviaContent").hide();
-  for (var i =1; i < 11; i++) {
-
+  for (var i = 1; i < 11; i++) {
+//match up the form values with true/false and tallies them accordingly to add score. also records unanswered as undefined
     var answer=$("input[type='radio'][name='q" + i + "']:checked").val();
     console.log(answer);
     getAnswers[i]=answer;
@@ -95,13 +62,22 @@ $("#triviaContent").hide();
    } 
    endTime();
   }
+  //place results in empty div
   $("#results").append("<h1>Correct answers: "+ correct +"</h1>");
   $("#results").append("<h1>Wrong answers: "+ wrong +"</h1>");
   $("#results").append("<h1>Unanswered answers: "+ unanswered +"</h1>");
   
 console.log("Answers correct: " + correct);
 console.log("Answers wrong: " + wrong);
-console.log ("Unanswered questions: " + unanswered);  
+console.log ("Unanswered questions: " + unanswered);
+}
+
+//decrement function here //Tied auto submission of answers to decrement function
+function decrement() {
+  timeLeft--;
+  $("#tickTock").html("Time remaining: " + timeLeft);
+  if (timeLeft === 0){
+  sumbit();  
  
   }
 }
