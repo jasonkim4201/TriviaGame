@@ -1,16 +1,8 @@
 body {
   font-family: 'Playfair Display SC', serif;
-  
-  
+  background: url("assets/images/theme.jpg")
 }
-.jumbotron {
 
-  
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .triviaZone {
   font-family: 'Slabo 27px', serif;
 }
@@ -21,4 +13,8 @@ body {
 
 #triviaStartScreen {
   margin-top: 15%;
+}
+
+#results {
+  font-family: 'Slabo 27px', serif;
 }
