@@ -43,7 +43,7 @@ function sumbit() {
   var answer;
   //hide trivia questions then uses a loop based on the form name + the numbers 1-10 following q
 $("#triviaContent").hide();
-  for (var i = 1; i < 11; i++) {
+  for (var i = 1; i < 12; i++) {
 //match up the form values with true/false and tallies them accordingly to add score. also records unanswered as undefined
     var answer=$("input[type='radio'][name='q" + i + "']:checked").val();
     console.log(answer);
@@ -68,7 +68,7 @@ $("#triviaContent").hide();
   //place results in empty div
   $("#results").append("<h1>Correct answers: "+ correct +"</h1>");
   $("#results").append("<h1>Wrong answers: "+ wrong +"</h1>");
-  $("#results").append("<h1>Unanswered answers:  </h1>"+ "<h1 id='color'>" + unanswered +"</h1>");
+  $("#results").append("<h1>Unanswered: " + unanswered +"</h1>");
   
 console.log("Answers correct: " + correct);
 console.log("Answers wrong: " + wrong);
