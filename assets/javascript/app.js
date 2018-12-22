@@ -12,7 +12,7 @@ var correct = 0;
 var wrong = 0;
 var unanswered = 0;
 //Total time
-var timeLeft = 90;
+var timeLeft = 100;
 var intervalId;
 console.log(correct);
 //The start trivia button which will start the timer and show the questions
@@ -23,8 +23,8 @@ $("#startButton").click(function (event) {
   $("#triviaStartScreen").hide();
   $("#triviaContent").show();
   setInterval(function() { 
-    console.log("90 second countdown is up.")
-  }, 90000);
+    console.log("120 second countdown is up.")
+  }, 120000);
 });
 
 //Submit button. On click it will end the timer. On submit answers will be collected determine which ones are correct or not
@@ -61,11 +61,14 @@ $("#triviaContent").hide();
     unanswered++;
    } 
    endTime();
+   //add jumbotron class to score page
+   $("#scoreBanner").addClass("jumbotron p-2")
+
   }
   //place results in empty div
   $("#results").append("<h1>Correct answers: "+ correct +"</h1>");
   $("#results").append("<h1>Wrong answers: "+ wrong +"</h1>");
-  $("#results").append("<h1>Unanswered answers: "+ unanswered +"</h1>");
+  $("#results").append("<h1>Unanswered answers:  </h1>"+ "<h1 id='color'>" + unanswered +"</h1>");
   
 console.log("Answers correct: " + correct);
 console.log("Answers wrong: " + wrong);
@@ -86,3 +89,4 @@ function decrement() {
 function endTime() {
   clearInterval(intervalId);
 }
+
